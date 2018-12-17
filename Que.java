@@ -11,22 +11,22 @@ package que;
  */
 public class Que {
    
-    private String [] WaitingQueue;
+    private String [] WaitingQueue; // array 
     private int queueSize;
     private int front = 0;
     private int rear = 0;
     private int numberOfItems = 0; // to monitor the queue
     
-   public Que (int size){
+   public Que (int size){ 
         
-        queueSize = size;
+        queueSize = size; // make an array with variable amount. Defined by user.
         WaitingQueue = new String [size];
         
     }
     
     public insert(String input){
         
-        if (numberOfItems + 1 <= queueSize){
+        if (numberOfItems + 1 <= queueSize){ // check if there is a place in array 
            
             
             WaitingQueue[rear] ++;
@@ -36,22 +36,23 @@ public class Que {
             System.out.println(" Insert ");
         }
     
-        else{
+        else{  // no place in array
             
-            System.out.println("Queue full");
+            System.out.println("Queue full, please remove something first");
+            return;
         }
     }
         
         public void remove (){
         
-            if(numberOfItems > 0){
+            if(numberOfItems > 0){ // check if there is anything in array to remove
                 System.out.println(" Remove done "+WaitingQueue[front] );
                 front ++;
                 numberOfItems --;
                 
             }
             
-            else{
+            else{ // if nothing in array 
                 
                 System.out.println(" Oops nothint to remove");
                 return;

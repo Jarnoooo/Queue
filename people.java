@@ -12,14 +12,14 @@ package que;
 public class people {
     private String people;
     
-    public people (String w){
+    public people (String w){ //make an object people
         people = w;
         
 }
-public String getWaitingQueue (){
+public String getWaitingQueue (){ // get name for object people
     return people;
 }
-public void setWaitingQueue (String w){
+public void setWaitingQueue (String w){ // set name for object people
     people = w;
 }
 }

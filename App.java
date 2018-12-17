@@ -13,10 +13,10 @@ public class App {
 
 
     public static void main(String[] args) {
-         Que s = new Que (5);
+         Que s = new Que (5); //make new queue
          
          System.out.println("Queue is aangemaakt :");
-         people x = new people ("man");
+         people x = new people ("man"); // make new object
          people a = new people ("vrouw");
          
          
